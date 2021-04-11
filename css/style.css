@@ -113,6 +113,9 @@ section.active .nav {
     height: 100%;
     z-index: 1;
     transition: 0.5s;
+    -moz-backdrop-filter:blur(20px);
+    -o-backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
     backdrop-filter: blur(20px);
 }
 
@@ -347,7 +350,11 @@ section.active #landing-text {
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
+    -moz-backdrop-filter:blur(10px);
+    -o-backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
     backdrop-filter: blur(10px);
+    
 }
 
 .content {
@@ -467,6 +474,9 @@ section.active #landing-text {
 	color: #FFFFFF;
 	padding-top: 50px;
 	padding-bottom: 50px;
+    -moz-backdrop-filter:blur(3px);
+    -o-backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(3px);
     backdrop-filter: blur(3px);
     background:rgba(255, 255, 255, 0.1);
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -887,6 +897,10 @@ section.active #landing-text {
 }
 
 @media (max-width: 500px) {
+
+    .glass {
+        background-color: azure;
+    }
 
     .toggle:before {
         content: '';
