@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Chung</title>
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/vanilla-tilt.js"></script>
+</head>
+<body>
+    <section id="landing-page">      
+        <header>
+            <a href="#" class="logo">DC</a>
+            <div class="toggle" onclick="menuToggle()"></div>
+        </header>
+        <ul class="nav">
+            <li><a href="#landing-page" onclick="menuToggle()">Home</a></li>
+            <li><a href="#about" onclick="menuToggle()">About Me</a></li>
+            <li><a href="#skills" onclick="menuToggle()">Skills</a></li>
+            <li><a href="#projects" onclick="menuToggle()">Projects</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact Me</a></li>
+        </ul>
+        <div class="glass"></div>
+        <h2 id="landing-text">Welcome</h2>
+        <div class="clouds">
+            <img src="images/Clouds/cloud1.png" style="--i:1;">
+            <img src="images/Clouds/cloud2.png" style="--i:2;">
+            <img src="images/Clouds/cloud3.png" style="--i:3;">
+            <img src="images/Clouds/cloud4.png" style="--i:4;">
+            <img src="images/Clouds/cloud5.png" style="--i:5;">
+            <img src="images/Clouds/cloud5.png" style="--i:6;">
+            <img src="images/Clouds/cloud4.png" style="--i:7;">
+            <img src="images/Clouds/cloud3.png" style="--i:8;">
+            <img src="images/Clouds/cloud2.png" style="--i:9;">
+            <img src="images/Clouds/cloud1.png" style="--i:10;">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <h2>Hi there! I'm David Chung.</h2>
+            <br>
+            <p>
+                I'm a highly motivated Computer Science graduate with a high level of focus and attention to detail, 
+                and thrive on creating high quality products. I would love the opportunity to show you what I 
+                could bring to your team.
+            </p>
+            <p>
+                I have professional internsip experience as a Software Engineer Intern at Robert Half where I worked 
+                primarily with AWS. Since graduating, I've taught myself React and JavaScript and created mulitple React 
+                applications that utilize API's to display data. I also have a very strong understanding of HTML, CSS, 
+                Java and MySQL, and would be more than happy to learn any other technologies required for the job.
+            </p>
+            <p>
+                I’m excited for the opportunity to leverage the knowledge I’ve gained over the years, and demonstrate my 
+                commitment to creating high quality products. Enjoy your stay and feel free to reach out to me if you have any inquiries!
+            </p>
+            <ul class="socials">
+                <li>
+                    <a href="https://www.github.com/davidwchung">                        
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <i class="fa fa-github" aria-hidden="true"></i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/davidchung93/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/davidwchung">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/davidwchung/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="about-image">
+            <img src="../images/about-me-profile-picture.png" alt="">
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills-title">Skills</div>
+        <div data-tilt-reverse="true" class="card">
+            <div class="content">
+                <h1>Front End</h1>
+                <h2>React.js, JavaScript, HTML, CSS</h2>
+                <p>
+                    I've created various React applications that utilize API's to get and display data. 
+                    I am also familiar with HTML/CSS and JavaScript from creating this portfolio website 
+                    amongst other projects.
+                </p>
+            </div>
+        </div>
+        <div data-tilt-reverse="true" class="card">
+            <div class="content">
+                <h1>Back End</h1>
+                <h2>Java, Node.js, Express.js, MySQL</h2>
+                <p>
+                    I have a very strong understanding of Java as it was the language primarily used 
+                    in earning my degree. I have also taken a course solely focused on MySQL and 
+                    worked with Node.js and Express.js.
+                </p>
+            </div>
+        </div>
+        <div data-tilt-reverse="true" class="card">
+            <div class="content">
+                <h1>AWS</h1>
+                <h2>EC2, S3, Lambda, IAM, CloudWatch, KMS, CloudFormation, SES</h2>
+                <p>
+                    I worked with these as a Software Engineer Intern at Robert Half. My primary 
+                    responsibility was automating maintenance tasks and moving them to the cloud.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="projects-title">PROJECTS</h1>
+        <div class="projects-container">
+            <a class="project-card" href="https://crypto-price-tracker-bf439.web.app/" target="_blank">
+                <div class="overlay-text">
+                    <h1>Cryptocurrency Price Tracker</h1>
+                    <p>
+                        React application that uses the CodeGecko API to get real time cryptocurrency prices. 
+                        Users can search for a specific cryptocurrency, sort by various parameters, or 
+                        expand for more info. Also includes a Dark Mode toggle.
+                    </p>	
+                </div>
+                <img src="images/project-1.jpg">
+            </a>
+            <a class="project-card" href="https://pokedex-df583.web.app/" target="_blank">
+                <div class="overlay-text">
+                    <h1>Pokedex API Website</h1>
+                    <p>React application that uses Axios to request data from the PokeAPI API and display it.</p>	
+                </div>
+                <img src="images/project-2.jpg">
+            </a>
+            <a class="project-card" href="/To-Do List/index.html" target="_blank">
+                <div class="overlay-text">
+                    <h1>To-Do List</h1>
+                    <p>To-Do List Created with JavaScript</p>	
+                </div>
+                <img src="images/project-3.jpg">
+            </a>
+            <a class="project-card" href="https://github.com/davidwchung/PortfolioWebsite" target="_blank">
+                <div class="overlay-text">
+                    <h1>Portfolio Website</h1>
+                    <p>www.davidwchung.com</p>	
+                </div>
+                <img src="images/project-4.png">
+            </a>
+            <a class="project-card" href="https://github.com/davidwchung/GatorTrader" target="_blank">
+                <div class="overlay-text">
+                    <h1>GatorTrader</h1>
+                    <p>Collaborative eCommerce Site</p>	
+                </div>
+                <img src="images/project-5.jpg">
+            </a>
+            <a class="project-card" href="https://github.com/davidwchung/TankGame" target="_blank">
+                <div class="overlay-text">
+                    <h1>Tank Game</h1>
+                    <p>2 Player game written in Java!</p>	
+                </div>
+                <img src="images/project-6.jpg">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <form>
+            <div class="contact-left">
+                <h1 class="contact-heading">Contact Me</h1>
+                <div class="contact-name">
+                    <h3>Name</h3>
+                    <input type="text" placeholder="Full Name"/>
+                </div>
+                <div class="contact-email">
+                    <h3>Email</h3>
+                    <input type="email" placeholder="example@gmail.com"/>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="contact-message">
+                    <h3>Message</h3>
+                    <textarea name="message" placeholder="Write Message..."></textarea>
+                </div>
+                <button>Submit</button>
+            </div>
+        </form> 
+    </section>
+</body>
+</html>
